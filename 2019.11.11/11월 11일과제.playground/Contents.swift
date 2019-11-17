@@ -22,6 +22,7 @@ for _ in 1...power {
 }
 print("\(base) to the power of \(power) is \(answer)")
 
+
 // for 문을 이용하여 10부터 1까지 내림차순으로 출력하는 코드 구현
 
 for number in (1...10).reversed() {
@@ -152,7 +153,7 @@ func pabo (a: Int) -> Int {
     return number[a]
 
 }
-
+pabo(a: 6)
 
 //- 정수를 입력받아 윤년(2월 29일이 있는 해)인지 아닌지 판단하는 함수
 //  (공식 - 매 4년 마다 윤년. 매 100년 째에는 윤년이 아님. 매 400년 째에는 윤년)
