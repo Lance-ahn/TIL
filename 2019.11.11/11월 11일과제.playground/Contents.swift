@@ -29,7 +29,7 @@ for number in (1...10).reversed() {
     print(number, terminator:" ")
 }
 
-print()
+
 
 
 
