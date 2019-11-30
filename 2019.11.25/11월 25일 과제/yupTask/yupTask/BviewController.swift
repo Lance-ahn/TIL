@@ -13,7 +13,7 @@ class BviewController: UIViewController {
     let bLabel = UILabel()
     let bPlusButton = UIButton(type: .system)
     
-    var bCount: Int = 0
+   
     
     override func viewDidLoad() {
          super.viewDidLoad()
@@ -25,6 +25,8 @@ class BviewController: UIViewController {
         bPlusButton.setTitle("Plus", for: .normal)
         bPlusButton.frame = CGRect(x: 100, y: 300, width: 100, height: 30)
         bPlusButton.backgroundColor = .blue
+      
+        
         self.view.addSubview(bPlusButton)
         view.backgroundColor = .yellow
         bPlusButton.addTarget(self, action: #selector(plusTouched2(_:)), for: .touchUpInside)
@@ -32,13 +34,11 @@ class BviewController: UIViewController {
         
     }
     @objc func plusTouched2 (_ sender: UIButton) {
-        bCount += 1
-        print(bCount)
+        
+      
         guard let goingBack = presentingViewController as? AviewController else { return }
-        
-        goingBack.aLabel.text = String(bCount)
-        goingBack.count = bCount
-        
+        goingBack.count += 1
+        goingBack.aLabel.text = String(goingBack.count)
         
         
     dismiss(animated: true)

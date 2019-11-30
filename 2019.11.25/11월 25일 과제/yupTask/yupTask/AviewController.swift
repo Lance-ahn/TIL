@@ -39,13 +39,14 @@ class AviewController: UIViewController {
         
     }
     @objc private func plusTouched (_ sender: UIButton){
-        count += 1
+       
         
         let bv = BviewController()
-        
+        count += 1
         bv.bLabel.text = String(count)
+     
         
-        bv.bCount = count
+   
         
         
         present(bv, animated: true)

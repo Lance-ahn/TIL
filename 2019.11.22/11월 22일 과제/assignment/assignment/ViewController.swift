@@ -31,6 +31,8 @@ class ViewController: UIViewController {
         
         segmentControl.setTitle("슈퍼", forSegmentAt: 1)
         segmentControl.setTitle("천재", forSegmentAt: 0)
+        
+        
     }
     @objc func switchmovement (_ sender: UISwitch) {
         if Switch.isOn {

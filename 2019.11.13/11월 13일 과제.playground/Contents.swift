@@ -10,15 +10,32 @@ var str = "Hello, playground"
 
 var fruit = ["철수": "apple", "영희": "banana", "진수" : "grape", "미희" : "strawberry"]
 
-func searchE(dict: [String : String]) -> [String] {
-    var result: [String] = []
+func searchE(dict: [String : String]) -> [String]{
+var result = [String]()
+
     for (key, value) in dict {
         if value.contains("e") {
             result.append(key)
         }
+        
     }
-    return  result
+    return result
 }
+
+print(searchE(dict: ["철수": "apple", "영희": "banana", "진수" : "grape", "미희" : "strawberry"]))
+
+
+
+
+//func searchE(dict: [String : String]) -> [String] {
+//    var result: [String] = []
+//    for (key, value) in dict {
+//        if value.contains("e") {
+//            result.append(key)
+//        }
+//    }
+//    return  result
+//}
 
 
 /*
