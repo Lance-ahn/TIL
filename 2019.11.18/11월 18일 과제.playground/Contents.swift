@@ -102,7 +102,7 @@ class circularCylinder {
     init(radius: Double, height: Double) {
         self.radius = radius
         self.height = height
-        circle = Circle(radius: <#T##Double#>)
+        circle = Circle(radius: Double)
     }
     
     func area(radius: Double, height: Double) -> Double {

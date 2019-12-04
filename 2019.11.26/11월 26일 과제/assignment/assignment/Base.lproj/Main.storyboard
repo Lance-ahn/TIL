@@ -36,6 +36,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Era-Bu-7xU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Thr-Ax-PTl"/>
+                            <constraint firstItem="Era-Bu-7xU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="Yq0-vK-n2j"/>
                             <constraint firstItem="Era-Bu-7xU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="Zhd-FE-op4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

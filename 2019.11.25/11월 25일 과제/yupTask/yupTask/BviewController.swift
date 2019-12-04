@@ -33,6 +33,10 @@ class BviewController: UIViewController {
         
         
     }
+    
+    
+    
+    
     @objc func plusTouched2 (_ sender: UIButton) {
         
       
