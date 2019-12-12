@@ -29,7 +29,6 @@ class SecondViewController: UIViewController {
         let baseWidth = view.frame.width - 100
         let baseHeight = CGFloat(200)
         let itemHeight = CGFloat(50)
-        
         let textFieldSpace = CGFloat(20)
         
         baseView.backgroundColor = .white

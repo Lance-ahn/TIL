@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+    var duck = 45
     
     @IBOutlet weak var Label: UILabel!
     
@@ -45,8 +45,10 @@ class ViewController: UIViewController {
         
         let index = sender.selectedSegmentIndex
         label1.text = sender.titleForSegment(at: index)
-        
+       
     }
+
     
 }
+
 
