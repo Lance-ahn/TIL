@@ -30,14 +30,14 @@ class ViewController: UIViewController {
     }
     
     
-    private func activateLayoutAnchors() {
+     private func activateLayoutAnchors() {
         // isActive를 통한 제약조건 활성화
         firstView.translatesAutoresizingMaskIntoConstraints = false
         firstView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
         firstView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
         firstView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20).isActive = true
         firstView.trailingAnchor.constraint(equalTo: secondView.leadingAnchor, constant: -10).isActive = true
-//
+// 
         
         // activate를 통한 제약조건 활성화
         secondView.translatesAutoresizingMaskIntoConstraints = false
