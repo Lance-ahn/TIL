@@ -57,6 +57,7 @@ final class ItemCell: UITableViewCell {
                                   y: 15,
                                   width: 200, height: imgView.frame.height)
         titleLabel.center.y = imgView.center.y
+        
     }
     
 }

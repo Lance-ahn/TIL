@@ -29,7 +29,6 @@ final class ViewController: UIViewController {
         tableView.rowHeight = 80
         view.addSubview(tableView)
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Hard")
         tableView.register(ItemCell.self, forCellReuseIdentifier: "Custom")
         
         counts = Array(repeating: 0, count: iPhones.count)
@@ -45,6 +44,9 @@ final class ViewController: UIViewController {
     }
     
     let iPhones = ["iPhone 1", "iPhone 7 plus", "iPhone 7", "iPhone 8 plus", "iPhone 11", "iPhone 11pro max", "iPhone 11pro", "iPhone XR", "iPhone XS MAX", "iPhone XS", "iPhone8", "iPhoneSE_Gold", "iPhoneSE_RoseGold","iPhoneX_SpaceGray", "iPhoneX_White"]
+    
+    var countArray = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    var maxCount = [3, 6, 3, 8, 9, 4, 2, 5, 8, 9, 4, 2, 4, 6, 8, 5, 3, 6, 3, 4]
     var counts = [Int]()
     
     
@@ -75,7 +77,17 @@ extension ViewController: UITableViewDataSource {
 
 extension ViewController:ItemCellDelegate {
     func didTap(cell: ItemCell) {
-        counts[cell.myButton.tag] += 1
-        cell.countLabel.text  = "\(counts[cell.myButton.tag])"
+        
+        if counts[cell.myButton.tag] < maxCount[cell.myButton.tag] {
+            counts[cell.myButton.tag] += 1
+            cell.countLabel.text  = "\(counts[cell.myButton.tag])"
+        } else {
+            cell.backgroundColor = .red
+            UIView.animate(withDuration: 0.4) {
+                cell.backgroundColor = .white
+                
+            }
+            
+        }
     }
 }
