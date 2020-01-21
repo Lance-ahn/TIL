@@ -19,13 +19,8 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         view.backgroundColor = .white
-        
-
-        
         setupUI()
-        
         mapView.delegate = self
-        
     }
     
     func geocodeAddressString(_ addressString: String) {
@@ -117,7 +112,6 @@ class ViewController: UIViewController {
         let region = MKCoordinateRegion(center: coordinate, span: span)
         mapView.setRegion(region, animated: true)
     }
-    
     
     //    private func mornitoringHeading(_ sender: Any) {
     //        guard CLLocationManager.headingAvailable() else { return }
