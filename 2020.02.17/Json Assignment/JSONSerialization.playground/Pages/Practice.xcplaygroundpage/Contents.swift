@@ -134,9 +134,10 @@ func practice3() {
                   let title = i["title"] as? String,
                   let body = i["body"] as? String else { return }
             
-            print(Post(userId: userId, id: id, title: title, body: body))
+//            print(Post(userId: userId, id: id, title: title, body: body))
+            
         }
-
+        print(jsonData.count)
     }
     dataTask.resume()
 }
